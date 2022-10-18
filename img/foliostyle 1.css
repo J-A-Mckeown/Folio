@@ -1,0 +1,263 @@
+body {
+  background-color: #FFFFFC;
+}
+.topBar {
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.topBar img {
+  display: inline;
+  height: 50px;
+  background-color: #E21219;
+  padding-left: 10px;
+
+}
+.logo {
+  grid-area: logo;
+}
+.navContainer {
+  color: #FFFFFC;
+  background-color: #E21219;
+  height: 50px;
+  margin-top: 2px;
+  width: 100vw;
+  position: fixed;
+  display: inline;
+}
+.navbar{
+  margin-right: 100px;
+  align-items: center;
+  margin-top: 15px;
+}
+.navbar a{
+  grid-area: nav;
+  color: #FFFFFC;
+  font-family: "roboto";
+  font-size: 20px;
+  letter-spacing: -1.3px;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a :hover {
+  text-decoration: underline;
+}
+
+#header {
+  grid-area: head;
+  text-align: center;
+  
+}
+.greyHead {
+  color: #545454;
+}
+nav {
+  text-align: right;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #020202;
+  font-weight: 1000;
+  font-size: 64px;
+  line-height: 70%;
+  letter-spacing: -5px;
+  margin: 0px;
+  margin-top: 10px;
+  padding-top: 60px;
+  
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #58B09C;
+  font-size: 34px;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  line-height: 30px; 
+}
+h3 {
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
+  color: #58B09C;
+  font-size: 30px;
+  line-height: 75%;
+  letter-spacing: -2px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.h2container {
+  grid-area: h2;
+}
+.about {
+  grid-column: span 3 / 4;
+}
+
+
+.aboutText {
+  color: #020202;
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  margin-top: 0px;
+}
+.tool1 {
+  grid-column: span 3/ 11;
+}
+.tool2 {
+  grid-column: span 3/ 11;
+}
+.theTools {
+  grid-area: theTools;
+  color: #020202;
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  margin-top: 0px;
+}
+
+.myWork {
+  display: block;
+  background-color: #58B09C;
+  padding-top: 10px;
+}
+.myWork h2 {
+  color: #FFFFFC;
+  line-height: 70%;
+  letter-spacing: -1px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+.workHead {
+  text-align: center;
+}
+.workSubhead {
+  font-family: "Roboto", sans-serif;
+  color: #58B09C;
+  font-size: 34px;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  line-height: 30px; 
+  letter-spacing: -3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.flexboxContainer {
+  display: inline-flex;
+  flex-direction: row;
+  z-index: 1;
+  width: 100vw;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+}
+.flexboxContainer > div {
+  margin: 100px;
+}
+
+.workDesc {
+  color: #020202;
+  font-family: 'open sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  margin-top: 0px;
+  float: right;
+  width: 30vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+
+.workContainer h3 {
+  font-family: 'roboto', sans-serif;
+  font-weight: 900;
+  color: #58B09C;
+  font-size: 30px;
+  line-height: 75%;
+  letter-spacing: -2px;
+}
+
+.AWLQImage {
+  background-image: url(AWLQHome.png);
+  background-size: cover;
+  height: 400px;
+}
+.LHImage {
+  background-image: url(LH\ proto\ snip.png);
+  background-size: cover;
+  height: 400px;
+}
+.bnbImage {
+  background-image: url(bnb_square.png);
+  background-size: cover;
+  height: 400PX;
+}
+button {
+  background-color: #E21219;
+  color: #FFFFFC;
+  width: 70%;
+  height: 60px;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+button a {
+  color: #FFFFFC;
+  width: 70%;
+  height: 30px;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  text-decoration: none; 
+}
+button:hover {
+  transform: translateY(-5px) scale(105%);
+  
+}
+footer {
+  width: 100vw;
+  height: 160px;
+  background-color: #545454;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFC;
+ margin-top: 20px;
+ display: block;
+}
+.footerLinks a{
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #020202;
+  text-decoration: none;
+
+}
+.footerLinks {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.footerLinks :hover {
+  color: #FFFFFC;
+  text-decoration: underline;
+}
+.copyright {
+  position: relative;
+  bottom: -40px;
+  text-align: center;
+}

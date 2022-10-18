@@ -1,0 +1,191 @@
+nav {
+    color:white;
+    font-family:'Roboto Mono', monospace;
+    position: sticky;
+  }
+a {
+    position: sticky;
+    color:white;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration:underline;
+    font-weight: bold;
+    color: #0fa;
+    
+  }
+  a:active {
+    text-decoration: none;
+  }
+
+h1 {
+    font-weight:normal;
+    color:#FFFFFA;
+    font-family:'Pirata One', cursive;
+    font-size:100pt;
+    text-align:center;
+  }
+
+.neonText {
+    color :#fff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+body {
+    background-color:#090B0B;
+  }
+
+#subhead {
+  text-align:center;
+}
+
+.important_head {
+  display:inline;
+}
+
+.less_head {
+  display:inline;
+  color:#272727;
+}
+
+h2 {
+    font-weight:normal;
+    font-size: 36px;
+    color:#FFFFFA;
+    text-align:center;
+    font-family: 'Staatliches', sans-serif;
+  }
+h3 {
+    font-weight:normal;
+    font-size: 30px;
+    color:#FFFFFA;
+    text-align:left;
+    padding-left: 200px;
+    font-family: 'Staatliches', sans-serif;
+}
+
+p {
+    font-family: 'Heebo',sans-serif;
+    font-size: 24px;
+    color:#FFFFFA;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#intro {
+    text-align: center;
+}
+
+#AWLQPreview {
+    background-image: url(/img/AWLQHome.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 75%;
+    margin: auto;
+}
+
+.neonSub {
+    text-shadow:
+    0 0 4px #fff,
+    0 0 19px #fff,
+    0 0 40px #0fa,
+    0 0 80px #0fa,
+    0 0 100px #0fa;
+}
+
+.flickering {
+    color :#fff;
+    animation: flicker 1.3s infinite alternate;
+}
+
+.flickering2 {
+    color :#fff;
+    animation: flicker 1s infinite alternate;
+}
+
+#LHPreview {
+    background-image: url(/img/LH\ proto\ snip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 300px;
+    margin-right: 200px;
+    
+}
+
+.outs {
+    color:white;
+    font-family:'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+form {
+    display: block;
+    color: #fff;
+    font-family: "Staatliches", sans-serif;
+    font-size: 24px;
+    height: 500px;
+    text-align: center;
+
+}
+
+input {
+    width: 60%;
+    font-size: 20px;
+}
+
+.sub {
+    width: 30%
+}
+
+textarea {
+    width: 60%;
+    height: 20%
+}
+
+footer {
+    display: block;
+    color:#212121;
+    text-align: center;
+}
+
+.leftAlign {
+    text-align: left;
+    margin-right: 800px;
+}
+
+.rightAlign {
+    text-align: left;
+    margin-left: 800px;
+}
+
+.rightAlignH3 {
+    text-align: right;
+    margin-right: 200px;
+}
+
+
+@keyframes flicker{
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+
+}
