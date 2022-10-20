@@ -81,7 +81,7 @@ p {
 }
 
 #AWLQPreview {
-    background-image: url("/img/AWLQHome.png");
+    background-image: url(/img/AWLQHome.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
@@ -109,7 +109,7 @@ p {
 }
 
 #LHPreview {
-    background-image: url("/img/LH\ proto\ snip.png");
+    background-image: url(/img/LH\ proto\ snip.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -169,6 +169,16 @@ footer {
     margin-right: 200px;
 }
 
+#contact {
+  padding-left: 45vw;
+  padding-right: 45vw;
+  padding-bottom: 40px;
+}
+
+#contactMob {
+  display: none;
+}
+
 
 @keyframes flicker{
 
@@ -187,5 +197,80 @@ footer {
     20%, 24%, 55% {
         text-shadow: none;
     }
+
+}
+
+
+
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .subs {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .neonSub {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 25px;
+  }
+
+  .leftAlign {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+
+  .rightAlignH3 {
+    text-align: center;
+  }
+  .rightAlign {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  .outs {
+    font-size: 12px;
+    
+  }
+
+  #AWLQPreview {
+    height: 200px;
+  }
+
+  #LHPreview {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    height: 200px;
+  }
+
+  #contact {
+    display: none;
+  }
+
+  #contactMob {
+    display: block;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 
 }
