@@ -1,276 +1,125 @@
-nav {
-    color:white;
-    font-family:'Roboto Mono', monospace;
-    position: sticky;
-  }
-a {
-    position: sticky;
-    color:white;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  a:visited {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration:underline;
-    font-weight: bold;
-    color: #0fa;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"href="foliostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo&family=Roboto+Mono:wght@300&family=Staatliches&display=swap" rel="stylesheet">    <meta name="author" content="Jake A McKeown">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     
-  }
-  a:active {
-    text-decoration: none;
-  }
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ME2K2M4DB2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-h1 {
-    font-weight:normal;
-    color:#FFFFFA;
-    font-family:'Pirata One', cursive;
-    font-size:100pt;
-    text-align:center;
-  }
+  gtag('config', 'G-ME2K2M4DB2');
+</script>
+<!-- Hotjar Tracking Code for -->
 
-.neonText {
-    color :#fff;
-    animation: flicker 1.5s infinite alternate;
-}
+<script>
+    (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:3085726,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 
-body {
-    background-color:#090B0B;
-  }
 
-#subhead {
-  text-align:center;
-}
-
-.important_head {
-  display:inline;
-}
-
-.less_head {
-  display:inline;
-  color:#272727;
-}
-
-h2 {
-    font-weight:normal;
-    font-size: 36px;
-    color:#FFFFFA;
-    text-align:center;
-    font-family: 'Staatliches', sans-serif;
-  }
-h3 {
-    font-weight:normal;
-    font-size: 30px;
-    color:#FFFFFA;
-    text-align:left;
-    padding-left: 200px;
-    font-family: 'Staatliches', sans-serif;
-}
-
-p {
-    font-family: 'Heebo',sans-serif;
-    font-size: 24px;
-    color:#FFFFFA;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-#intro {
-    text-align: center;
-}
-
-#AWLQPreview {
-    background-image: url(/img/AWLQHome.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 75%;
-    margin: auto;
-}
-
-.neonSub {
-    text-shadow:
-    0 0 4px #fff,
-    0 0 19px #fff,
-    0 0 40px #0fa,
-    0 0 80px #0fa,
-    0 0 100px #0fa;
-}
-
-.flickering {
-    color :#fff;
-    animation: flicker 1.3s infinite alternate;
-}
-
-.flickering2 {
-    color :#fff;
-    animation: flicker 1s infinite alternate;
-}
-
-#LHPreview {
-    background-image: url(/img/LH\ proto\ snip.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 300px;
-    margin-right: 200px;
+<title>Jake McKeown - Folio</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#"><b>Contact Me</b></a> |
+        <a href="#"><b>My Work</b></a> |
+        <a href="Resume.html" target="_blank"><b>Download CV</b></a>
+      </nav>
+     
+      <h1 class="neonText">JAKE MCKEOWN</h1>
+      
+      <div id="subhead">
+      <h2 class="important_head">UX/UI Designer</h2>
+      <h2 class="less_head">Retro Enthusiast</h2>
+      <br>
+      <h2 class="less_head">Skateboarder</h2>
+      <h2 class="important_head">Front End Developer</h2>
+      </div>
+      <br><br>
+    <p id="intro">Hi! My name is Jake and I'm a UX/UI Designer from Melbourne with experience in Front-End Web Development. I enjoy working from the start of user experience to get the best out of my work in designing <b>useful, minimal & clean</b> user interfaces. </p>
+      <br>
+      <h2 class="subs">Past Works</h2>
+     <p>
+     During my UX/UI short course with Monash University I undertook a variety of different projects and works that helped me get accustomed to the Agile methodoligy by conducting scrums on group projects and sprint planning on solo projects. all projects were completed in 3 weeks or less. 
+     </p>
+    <br>
+    <h3 class="leftAlign neonSub"> AWLQ Website <span class="flickering">Redesign</span> Project</h3>
+    <br>
     
-}
-
-.outs {
-    color:white;
-    font-family:'Roboto Mono', monospace;
-    font-size: 16px;
-}
-
-form {
-    display: block;
-    color: #fff;
-    font-family: "Staatliches", sans-serif;
-    font-size: 24px;
-    height: 500px;
-    text-align: center;
-
-}
-
-input {
-    width: 60%;
-    font-size: 20px;
-}
-
-.sub {
-    width: 30%
-}
-
-textarea {
-    width: 60%;
-    height: 20%
-}
-
-footer {
-    display: block;
-    color:#212121;
-    text-align: center;
-}
-
-.leftAlign {
-    text-align: left;
-    margin-right: 800px;
-}
-
-.rightAlign {
-    text-align: left;
-    margin-left: 800px;
-}
-
-.rightAlignH3 {
-    text-align: right;
-    margin-right: 200px;
-}
-
-#contact {
-  padding-left: 45vw;
-  padding-right: 45vw;
-  padding-bottom: 40px;
-}
-
-#contactMob {
-  display: none;
-}
+    <a href="#">
+    <div data-tilt>
+        <div id="AWLQPreview"></div>
+    </div>
+    </a>
+    <p class="leftAlign">
+      The second group project we undertook in the Monash Bootcamp as to redesign a wesbite and showcase our process throughout the design process. <br>
+      <a class="outs" href="#">More</a> | <a class="outs" href="#">Presentation Slides</a> | <a class="outs" href="#">Figma Protoype</a>
+    </p>
+    <br>
+    <h3 class="rightAlignH3 neonSub"><span class="flickering2">LikeHome</span> Travel App</h3>
+    <br>
 
 
-@keyframes flicker{
+    <a href="#">
+    <div data-tilt>
+       <div id="LHPreview"></div>
+    </div>
+    </a>
+    <p class="rightAlign">
+       The LikeHome travel app was the first solo Project I completed as part of my design course and was more focused on User Experience. <br>
+        <a class="outs" href="#">More</a> | <a class="outs" href="#">Presentation Slides</a> | <a class="outs" href="#">Figma Protoype</a>
+    </p>
+    <br>
+    <h2>Contact</h2> 
+    <br>
+    <div id="contact">
+    <a href="https://www.linkedin.com/in/jake-a-mckeown">
+      <iconify-icon inline icon="akar-icons:linkedin-v1-fill" style="color: #d0d0d0;" width="70"></iconify-icon>
+    </a>
+    <a href="mailto:jakeamckown@gmail.com?subject=Folio Enquiry&body">
+      <iconify-icon inline icon="clarity:email-solid" style="color: #d0d0d0;" width="70"></iconify-icon>
+    </a>
 
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
-    }
+    </div>
+
+    <div id="contactMob">
+      <a href="https://www.linkedin.com/in/jake-a-mckeown">
+        <iconify-icon inline icon="akar-icons:linkedin-v1-fill" style="color: #d0d0d0;" width="40"></iconify-icon>
+      </a>
+      <a href="mailto:jakeamckown@gmail.com?subject=Folio Enquiry&body">
+        <iconify-icon inline icon="clarity:email-solid" style="color: #d0d0d0;" width="40"></iconify-icon>
+      </a>
+  
+      </div>
+
     
-    20%, 24%, 55% {
-        text-shadow: none;
-    }
-
-}
-
-
-
-@media all and (max-width: 500px) {
-  h1 {
-    font-size: 70px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 15px;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
-  .subs {
-    margin-top: 5px;
-    margin-bottom: 20px;
-  }
-
-  .neonSub {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    font-size: 25px;
-  }
-
-  .leftAlign {
-    padding-right: 5vw;
-    padding-left: 5vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
-
-  .rightAlignH3 {
-    text-align: center;
-  }
-  .rightAlign {
-    padding-right: 5vw;
-    padding-left: 5vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
-  .outs {
-    font-size: 12px;
+    <footer>© Jake McKeown, 2022 til infinity.</footer>
     
-  }
-
-  #AWLQPreview {
-    height: 200px;
-  }
-
-  #LHPreview {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    height: 200px;
-  }
-
-  #contact {
-    display: none;
-  }
-
-  #contactMob {
-    display: block;
-    margin: auto;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-}
+    <!-- Script Tings-->
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+    <script src="tilt.jquery.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    </body>
+    
+    
+</html>
