@@ -33,7 +33,7 @@ h1 {
 
 .neonText {
     color :#fff;
-    animation: flicker 1.5s infinite alternate;
+    animation: flicker 1s infinite alternate;
 }
 
 body {
@@ -76,6 +76,15 @@ p {
     padding-left: 200px;
     padding-right: 200px;
 }
+
+.list {
+    font-family: 'Heebo',sans-serif;
+    font-size: 24px;
+    color:#FFFFFA;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 #intro {
     text-align: center;
 }
@@ -85,7 +94,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     height: 300px;
-    width: 75%;
+    width: 70%;
     margin: auto;
 }
 
@@ -109,7 +118,7 @@ p {
 }
 
 #LHPreview {
-    background-image: url(img/LH\ proto\ snip.png);
+    background-image: url(img/LHProto.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -156,12 +165,12 @@ footer {
 
 .leftAlign {
     text-align: left;
-    margin-right: 800px;
+    margin-right: 80px;
 }
 
 .rightAlign {
-    text-align: left;
-    margin-left: 800px;
+    text-align: right;
+    margin-left: 200px;
 }
 
 .rightAlignH3 {
@@ -179,6 +188,13 @@ footer {
   display: none;
 }
 
+.sub {
+    border-radius: 20px;
+    color: #090B0B;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 200px;
+}
 
 @keyframes flicker{
 
@@ -201,6 +217,82 @@ footer {
 }
 
 
+/*WORK PAGES*/
+
+.beforeGif {
+    background-image: url(./img/AWLQ/oldSite.gif);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catLady {
+    background-image: url(./img/AWLQ/AWLQPersona.png);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .statements {
+    background-image: url(./img/AWLQ/AWLQStatements.gif);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .moodBoard {
+    background-image: url(./img/AWLQ/AWLQMood.gif);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .styleGuide {
+    background-image: url(./img/AWLQ/AWLQStyle.gif);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .lowFi {
+    background-image: url(./img/AWLQ/AWLQLoFi.gif);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hiFi {
+    background-image: url(./img/AWLQ/AWLQHiFi.gif);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .postTest {
+    background-image: url(./img/AWLQ/AWLQPostTest.png);
+    background-size: contain;
+    height: 300px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+/* MOBILE RESPONSIVE*/
 
 @media all and (max-width: 500px) {
   h1 {
