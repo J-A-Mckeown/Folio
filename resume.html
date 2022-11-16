@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- marlin-css -->
+    <link href="https://cdn.jsdelivr.net/npm/marlin-css@0.7.2/marlin.css" rel="stylesheet" type="text/css">
+    <!-- General Sans -->
+    <link href="https://api.fontshare.com/css?f[]=general-sans@1&display=swap" rel="stylesheet">
+    <!--  -->
+    <title>Jake McKEown CV</title>
+    <!--  -->
+    <style>
+        /* MARLIN OVERRIDES */
+        :root {
+            --primary: #1b1b1b;
+            --text: #1b1b1b;
+            --secondary: #969696;
+            --font-display: 'Roboto', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+            --factor-type-h1: 0.42;
+            --factor-type-h3: 0.26;
+            --master-h2-size: var(--master-body-1-size);
+            --master-h2-line-height: var(--master-body-2-line-height);
+        }
+
+        /* ROOT VARS */
+        :root {
+            --gap: calc(var(--sc-1) * 0.5);
+            --line: 0.5px solid var(--primary);
+        }
+
+        /* STYLE INIT */
+        h1 {
+            font-weight: 640;
+        }
+
+        h2 {
+            font-weight: 640;
+        }
+
+        h3 {
+            color: var(--secondary);
+            font-weight: 560;
+        }
+
+        /*  */
+        body {
+            padding: var(--sc-5) var(--sc-6);
+        }
+
+        /* PAGE CONSTRAINTS */
+        #page {
+            /* Enforce A4 aspect ratio */
+            aspect-ratio: 1 / 1.41421;
+            /* Convenient max-width */
+            /* max-width: 1080px; */
+            /* Pad the web preview (replaced with @page margin in print) */
+            padding: var(--sc-4);
+        }
+
+        /* PRINT */
+        @page {
+            size: A4;
+            margin: 8mm;
+        }
+
+        /* SPACING TOKENS */
+        :root {
+            --sp-0: 0.4vw;
+            --sc-1: 1.2vw;
+            --sp-2: 2vw;
+            --sp-3: 3.2vw;
+            --sp-4: 4vw;
+            --sp-5: 8vw;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            /* RELATIVE FONT SIZES */
+            h1 {
+                font-size: var(--sp-4) !important;
+                line-height: var(--sp-5) !important;
+            }
+
+            h2 {
+                font-size: var(--sc-1) !important;
+                font-weight: 600 !important;
+                line-height: var(--sp-2) !important;
+            }
+
+            h3 {
+                font-size: calc(var(--sc-1)* 0.72) !important;
+                font-weight: 560 !important;
+                line-height: var(--sc-1) !important;
+                color: #A1A1A1;
+            }
+
+            h4 {
+                font-size: var(--sp-2);
+                font-weight: 640;
+            }
+
+            p {
+                font-size: var(--sc-1) !important;
+                font-weight: 400 !important;
+                line-height: calc(var(--sp-2) * 1.08) !important;
+            }
+
+            button {
+                display: none;
+            }
+
+            /* STRIP WEB ELEMENTS */
+            nav {
+                display: none;
+            }
+        }
+
+        main {
+            padding: var(--sc-4);
+        }
+
+        /* HEADER */
+        header {
+            margin-bottom: var(--sc-3);
+        }
+
+        /* RAIL | CONTACT */
+
+        #railContact h2 {
+            grid-column: span var(--cols-C);
+        }
+
+        #railContact>* {
+            margin-bottom: var(--sc-1);
+        }
+
+
+        #railContact .email {
+            font-weight: 600;
+        }
+
+        #railContact .social {
+            grid-column: span var(--cols-F);
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* SECTION */
+        section {
+            display: grid;
+            grid-template-columns: repeat(var(--cols-L), 1fr);
+            padding-top: var(--sc-1);
+            padding-bottom: var(--sc-1);
+        }
+
+        section>* {
+            padding-top: var(--sc-1);
+        }
+
+        /* OVERLINES */
+        .label,
+        .body,
+        .fragment,
+        .segment {
+            border-top: var(--line);
+        }
+
+        /* GAPS */
+        .label,
+        .fragment {
+            margin-right: var(--gap);
+        }
+
+        /* LABEL */
+        .label {
+            grid-column: span var(--cols-C);
+        }
+
+        /* BODY */
+        .body {
+            grid-column: span var(--cols-I);
+            display: grid;
+            grid-template-columns: repeat(var(--cols-I), 1fr);
+        }
+
+        .body p {
+            grid-column: span var(--cols-I);
+        }
+
+        #sectionTechnical .body,
+        #sectionCareer .body {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        /* FRAGMENT */
+        .fragment {
+            grid-column: span var(--cols-C);
+            padding-top: var(--sc-1);
+            padding-right: var(--sc-1);
+        }
+
+        .fragment:nth-child(-n+3) {
+            padding-bottom: var(--sc-1);
+        }
+
+        .fragment h2 {
+            padding-bottom: var(--sc-1);
+        }
+
+        /* CAREER */
+        .segment {
+            grid-column: span var(--cols-I);
+            padding-top: var(--sc-1);
+            padding-right: var(--sc-1);
+            padding-bottom: var(--sc-1);
+        }
+
+        .segment>* {
+            padding-bottom: var(--sp-0);
+        }
+
+        /* RESPONSIVE */
+
+        @media screen and (max-width: 864px) {
+
+            /* STRIP BORDERS ON MOBILE (to reduce double ups) */
+            .body,
+            .fragment,
+            .segment {
+                border-top: none;
+            }
+
+            section {
+                margin-top: var(--sc-6);
+            }
+
+            .label h2 {
+                display: none;
+            }
+
+            #railContact .social {
+                justify-content: flex-start;
+            }
+        }
+
+        /*  */
+    </style>
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- TITLE -->
+        <header>
+            <h1>Jake McKeown.</h1>
+        </header>
+        <!-- RAIL | CONTACT -->
+        <div id="railContact" class="grid-12">
+            <h2 class="email">+61 474 844 346</h2>
+            <h2>JakeAMcKeown@gmail.com</h2>
+            <div class="social">
+                <h2>Bentleigh East 3165</h2>
+            </div>
+        </div>
+
+        <!-- SECTION | SUMMARY -->
+        <section id="sectionSummary">
+            <div class="label">
+                <h2>Summary</h2>
+            </div>
+
+            <div class="body">
+                <p>Hello there! <br> My name is Jake McKeown and I am a UX/UI Designer with experience in Front End
+                    Development.</p>
+                <br />
+                <p>My favourite thing about Design, particularly UX/UI Design is that it satisfies both side of my brain
+                    as i get ot use the logic driven sde when collecting data for UX aad the creative side wne it comes
+                    to designing a user intefrace.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION | TECHNICAL -->
+        <section id="sectionTechnical">
+            <div class="label">
+                <h2>Technical</h2>
+            </div>
+
+            <div class="body">
+                <!-- FRAGMENTS -->
+                <div class="fragment">
+                    <h2>UX - User Research</h2>
+                    <p>My approach to getting good user research is to use the design “double diamond” process, even
+                        though user research is usually seen as just one of the diamonds generally, you can use the
+                        understand, define, develop and finalise phases conduct meaningful research.
+                    </p>
+                </div>
+                <div class="fragment">
+                    <h2>UX - User Empathy</h2>
+                    <p>To make a good product for the user we need to be able to empathise with them to understand their
+                        needs and goals. To do this I usually carry out empathy mapping and creating “I like, I wish,
+                        what if” lists and then translating those things to a feature matrix after interviews.
+                    </p>
+                </div>
+                <div class="fragment">
+                    <h2>UX - Qualitative Interviews</h2>
+                    <p>Qualitative interviews are our bread and butter for subjective research, given the right
+                        questions are asked. My approach is to usually conduct one-on-one interviews, stakeholder
+                        interviews and focus groups. Qualitative research enables us to “connect” with prospective
+                        users.
+                    </p>
+                </div>
+                <div class="fragment">
+                    <h2>UI - Wireframing</h2>
+                    <p>For wireframing I take the design into as low fidelity as possible while maintaining
+                        functionality. This allows me to focus on the flow and function of the project without the
+                        “Bells and Whistles” that may clutter or sway some bias from the nice visuals. Without function
+                        design is just art.
+                    </p>
+                </div>
+                <div class="fragment">
+                    <h2>UI - Prototyping</h2>
+                    <p>During the prototyping phase I go all out in terms of fidelity and animation as these are the
+                        core for presentations to stakeholders. I mainly use figma for this and the wireframing phase
+                        although have branched out with Adobe XD as I am familiar with the Adobe Suite.
+                    </p>
+                </div>
+                <div class="fragment">
+                    <h2>UI - User Testing</h2>
+                    <p>User testing is something I capitalize off of during the prototyping phase as whenever I come to
+                        a split decision in terms of design doing some basic A/B testing helps as it’s basic, unbiased
+                        testing that has good impact versus the little effort to set up. I also rely heavily on proper
+                        user testing when redesigning a project.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION | CAREER -->
+        <section id="sectionCareer">
+            <div class="label">
+                <h2>Career</h2>
+            </div>
+
+            <div class="body">
+                <!-- SEGMENTS -->
+                <div class="segment">
+                    <h2>Stores Supervisor. Aggreko</h2>
+                    <h3>2022 -Present / Braeside, Vic</h3>
+                    <p>→ Oversee the end-to-end development of warehouse functions, from receiving to dispatch.</p>
+                    <p>→ Implement small changes to increase efficacy of stores work via Excel formulas and changes to
+                        wokrflow. </p>
+                    <p>→ Coordinate with other in-house departments for large shipments and book transport and prepare
+                        all international documents.</p>
+                </div>
+                <div class="segment">
+                    <h2>Lead Stores Supervisor. Jetstar Airways</h2>
+                    <h3>2017-2022 / Melbourne, VIC</h3>
+                    <p>→ Got promoted from the Central Distribution centre to the nighshift lead for the routine air
+                        craft maintenance department managing a 2 person team. </p>
+                    <p>→ Oversee the end-to-end process of parts and tooling storage to CASA standards.</p>
+                    <p>→ Coordinate with central distribution department to ensure delivery timelines for time sensitive
+                        componenets is met within time frame to prevent AOG siutations.</p>
+                </div>
+
+        </section>
+
+        <!-- SECTION | EDUCATION -->
+        <section id="sectionCareer">
+            <div class="label">
+                <h2>Education</h2>
+            </div>
+
+            <div class="body">
+                <!-- SEGMENTS -->
+                <div class="segment">
+                    <h2>UX/UI & Front End Bootcamp. Monash University</h2>
+                    <h3>March-August 2022 / Adelaide, SA</h3>
+                </div>
+                <div class="segment">
+                    <h2>FreeCodeCamp Responsive Web Design Certification</h2>
+                    <h3>2021 / Online</h3>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
