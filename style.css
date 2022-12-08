@@ -118,7 +118,7 @@ p {
 }
 
 #LHPreview {
-    background-image: url(img/LHProto.png);
+    background-image: url(img/LH/LHProto.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
