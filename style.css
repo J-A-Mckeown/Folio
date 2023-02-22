@@ -206,6 +206,11 @@ footer {
     width: 200px;
 }
 
+.details {
+  text-align: center;
+  
+}
+
 @keyframes flicker{
 
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
