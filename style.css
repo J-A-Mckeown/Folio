@@ -90,10 +90,10 @@ p {
 }
 
 #AWLQPreview {
-    background-image: url(img/AWLQHome.png);
+    background-image: url(img/AWLQMock.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 500px;
     width: 70%;
     margin: auto;
 }
@@ -118,11 +118,11 @@ p {
 }
 
 #LHPreview {
-    background-image: url(img/LH/LHProto.png);
+    background-image: url(img/LH/LHMock.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    height: 300px;
+    height: 500px;
     margin-right: 200px;
     
 }
@@ -132,6 +132,16 @@ p {
     font-family:'Roboto Mono', monospace;
     font-size: 16px;
 }
+
+.quote {
+  font-family: 'Heebo',sans-serif;
+  font-size: 36px;
+  font-style: italic;
+  text-align: center;
+  color:#FFFFFA;
+ 
+}
+
 
 form {
     display: block;
@@ -292,6 +302,78 @@ footer {
   }
 
 
+  .LHAffinity {
+    background-image: url(../img/LH/LHAffinity.gif);
+    background-size: contain;
+    height: 400px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;    
+  }
+
+  .LHPersona {
+    background-image: url(../img/LH/LHPersona.png);
+    background-size: contain;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;    
+  }
+
+  .LHProblems {
+    background-image: url(../img/LH/LHProblems.gif);
+    background-size: contain;
+    height: 400px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;    
+  }
+
+  .LHLike {
+    background-image: url(../img/LH/LHLike.png);
+    background-size: contain;
+    height: 400px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;    
+  }
+  
+  .LHMatrix {
+    background-image: url(../img/LH/LHMatrix.png);
+    background-size: contain;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;    
+  }
+
+  .LHLofi {
+    background-image: url(../img/LH/LHLofi.gif);
+    background-size: contain;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;    
+  }
+
+  .LHHifi {
+    background-image: url(../img/LH/LHProtoPreview.png);
+    background-size: contain;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;   
+  }
+
+  .LHTest {
+    background-image: url(../img/LH/LHTest.gif);
+    background-size: contain;
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;  
+  }
+
 /* MOBILE RESPONSIVE*/
 
 @media all and (max-width: 500px) {
@@ -303,12 +385,37 @@ footer {
     font-size: 25px;
   }
 
+  .quote {
+    font-family: 'Heebo',sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    color:#FFFFFA;
+  }
+
   p {
     font-size: 15px;
     padding-left: 5vw;
     padding-right: 5vw;
   }
 
+  ul {
+    font-size: 15px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  .list {
+    font-family: 'Heebo',sans-serif;
+    font-size: 15px;
+    color:#FFFFFA;
+    padding-left: 30px;
+    padding-right: 30px;
+}
   .subs {
     margin-top: 5px;
     margin-bottom: 20px;
@@ -365,4 +472,8 @@ footer {
     text-align: center;
   }
 
+
+
 }
+
+
