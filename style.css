@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
     color:white;
     font-family:'Roboto Mono', monospace;
@@ -206,9 +210,9 @@ footer {
     width: 200px;
 }
 
-.details {
+#details {
   text-align: center;
-  
+
 }
 
 @keyframes flicker{
